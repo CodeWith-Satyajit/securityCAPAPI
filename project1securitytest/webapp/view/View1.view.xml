@@ -1,0 +1,67 @@
+<mvc:View controllerName="project1securitytest.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:m="sap.m" xmlns="sap.ui.table">
+    <m:Page id="page" title="{i18n>title}">
+ <m:content>
+            <Table enableCellFilter="true" visibleRowCount="15" id="idTabel01" rows="{textModel>/}" selectionMode="Single">
+                <columns>
+                    <Column id="c1" width="25%">
+                        <m:Label text="Material ID" id="l1" />
+                        <template>
+                            <m:Text text="{textModel>ID}" id="t1" />
+                        </template>
+                    </Column>
+                    <Column width="50%" id="c2">
+                        <m:Label text="Name" id="l2" />
+                        <template>
+                            <m:Text text="{textModel>Name}" id="t2" />
+                        </template>
+                    </Column>
+                    <Column width="25%" id="c3">
+                        <m:Label text="Group" id="l3" />
+                        <template>
+                            <m:Text text="{textModel>Group}" id="t3" />
+                        </template>
+                    </Column>
+                                        <Column width="25%" id="c32">
+                        <m:Label text="Created At" id="l32" />
+                        <template>
+                            <m:Text text="{textModel>createdAt}" id="t2203" />
+                        </template>
+                    </Column>
+                                                         <Column width="25%" id="c322">
+                        <m:Label text="Created By" id="l332" />
+                        <template>
+                            <m:Text text="{textModel>createdBy}" id="t223" />
+                        </template>
+                    </Column>
+
+                        <Column width="25%" id="cw322">
+                        <m:Label text="Modified At" id="l3932" />
+                        <template>
+                            <m:Text text="{textModel>modifiedAt}" id="t2w23" />
+                        </template>
+                    </Column>
+
+                    
+                        <Column width="25%" id="cw1322">
+                        <m:Label text="Modified By" id="l31932" />
+                        <template>
+                            <m:Text text="{textModel>modifiedBy}" id="t21w23" />
+                        </template>
+                    </Column>
+                </columns>
+            </Table>
+        </m:content>
+        <m:customHeader>
+            <m:Toolbar width="100%" id="toolbar1">
+                <m:content>
+                    <Button xmlns="sap.m" text="Create" id="button1" press="create" />
+                    <Button xmlns="sap.m" text="Read" id="button4" press="read" />
+                    <Button xmlns="sap.m" text="Update" id="button2" press="update" />
+                    <!-- <Button xmlns="sap.m" text="Delete" id="button3" press="delete" /> -->
+                </m:content>
+            </m:Toolbar>
+        </m:customHeader>
+
+    </m:Page>
+</mvc:View>
